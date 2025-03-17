@@ -1,0 +1,26 @@
+{
+    "app-id": "com.invoke.community",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "24.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "/app/AppRun",
+    "finish-args": [
+        "--unshare=network",
+        "--socket=wayland",
+        "--device=all",
+        "--persist=."
+    ],
+    "modules": [
+        {
+            "name": "invoke-community",
+            "buildsystem": "simple",
+            "build-commands": ["cp -r ./* /app/"],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "squashfs-root"
+                }
+            ]
+        }
+    ]
+}
