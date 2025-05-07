@@ -15,9 +15,7 @@
             "name": "invoke-community",
             "buildsystem": "simple",
             "build-commands": [
-                "echo $(ls ./usr/share/icons)",
                 "cp -r ./* /app/",
-                "mkdir -p /app/share/icons/hicolor/scalable/apps/",
                 "mkdir -p /app/share/applications/",
                 "install -Dm644 ./com.invoke.community.desktop /app/share/applications/com.invoke.community.desktop"
             ],
