@@ -1,3 +1,5 @@
+flatpak install -y org.flatpak.Builder
+
 wget https://download.invoke.ai/Invoke%20Community%20Edition.AppImage
 chmod +x "./Invoke Community Edition.AppImage"
 "./Invoke Community Edition.AppImage" --appimage-extract
